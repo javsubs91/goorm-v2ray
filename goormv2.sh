@@ -13,13 +13,12 @@ rm -f /v2ray/v2ctl
 wget --no-check-certificate https://github.com/byxiaopeng/goorm-v2ray/raw/master/v2ctl
 chmod +x /v2ray/v2ctl
 rm -f /v2ray/config.json
-wget --no-check-certificate https://github.com/byxiaopeng/goorm-v2ray/raw/master/config.json
+wget --no-check-certificate https://github.com/qq1731402057/goorm-v2ray/blob/master/config.json
 
 
 #修改系统为北京时间
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-screen -S v2
-/v2ray/v2ray -config=/v2ray/config.json
+screen -S v2 /v2ray/v2ray -config=/v2ray/config.json
 # 开始后台运行
-#nohup /v2ray/v2ray -config=/v2ray/config.json >out.txt 2>&1 &
+nohup /v2ray/v2ray -config=/v2ray/config.json >out.txt 2>&1 &
