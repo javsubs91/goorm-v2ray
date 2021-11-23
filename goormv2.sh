@@ -1,6 +1,6 @@
 #!/bin/bash
 #下载核心程序
-curl https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+echo "deb [signed-by=/usr/share/keyrings/heroku.com.asc] https://cli-assets.heroku.com/apt ./" | sudo tee /etc/apt/sources.list.d/heroku.list
 apt-get -y update
 apt-get install -y screen
 rm -rf /v2ray
