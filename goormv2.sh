@@ -6,11 +6,11 @@ rm -rf /v2ray
 mkdir /v2ray
 cd /v2ray
 rm -f /v2ray/v2ray
-wget --no-check-certificate https://github.com/byxiaopeng/goorm-v2ray/raw/master/v2ray
+wget --no-check-certificate https://raw.githubusercontent.com/javsubs91/goorm-v2ray/master/v2ray
 #设置运行权限
 chmod +x /v2ray/v2ray
 rm -f /v2ray/v2ctl
-wget --no-check-certificate https://github.com/byxiaopeng/goorm-v2ray/raw/master/v2ctl
+wget --no-check-certificate https://raw.githubusercontent.com/javsubs91/goorm-v2ray/master/v2ctl
 chmod +x /v2ray/v2ctl
 rm -f /v2ray/config.json
 wget --no-check-certificate https://github.com/qq1731402057/goorm-v2ray/blob/master/config.json
