@@ -13,7 +13,7 @@ rm -f /v2ray/v2ctl
 wget --no-check-certificate https://raw.githubusercontent.com/javsubs91/goorm-v2ray/master/v2ctl
 chmod +x /v2ray/v2ctl
 rm -f /v2ray/config.json
-wget --no-check-certificate https://github.com/qq1731402057/goorm-v2ray/blob/master/config.json
+wget --no-check-certificate https://raw.githubusercontent.com/javsubs91/goorm-v2ray/master/config.json
 
 
 #修改系统为北京时间
