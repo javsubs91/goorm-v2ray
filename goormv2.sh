@@ -1,5 +1,6 @@
 #!/bin/bash
 #下载核心程序
+curl https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 apt-get -y update
 apt-get install -y screen
 rm -rf /v2ray
