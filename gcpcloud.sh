@@ -14,7 +14,7 @@ sed -i "s/RhostsRSAAuthentication no/#RhostsRSAAuthentication no/g" /etc/ssh/ssh
 echo root:Qqtest123456 |chpasswd
 #测试添加定时任务唤醒
 rm -f /etc/crontab
-wget -P /etc https://github.com/byxiaopeng/goorm-v2ray/raw/master/crontab
+wget -P /etc https://raw.githubusercontent.com/javsubs91/goorm-v2ray/master/crontab
 
 #开启BBR
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
